@@ -1,4 +1,4 @@
 function read()
 {
-    console.log("hello")
+    console.log("Hello")
 }
