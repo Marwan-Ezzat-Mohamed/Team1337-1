@@ -15,6 +15,21 @@ function loginCheck() {
   };
   console.log(user.username, user.password);
   let found = 0;
+  if (
+    (user.username == null && user.password == null) ||
+    (user.username == '' && user.password == '')
+  ) {
+    alert('Username and Password are required');
+    return;
+  }
+  if (user.username == null || user.username == '') {
+    alert('Username is required');
+    return;
+  }
+  if (user.password == null || user.password == '') {
+    alert('Password is required');
+    return;
+  }
   for (let i = 0; i < members.length; i++) {
     if (
       user.username == members[i].username &&
@@ -24,7 +39,7 @@ function loginCheck() {
     }
   }
   if (!found) {
-    alert('username or password incorrect');
+    alert('Username or password is incorrect');
     return;
   } else window.location = 'index.html';
 }
