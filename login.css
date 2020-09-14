@@ -20,6 +20,7 @@ body {
   font-weight: bolder;
   font-size: 23px;
 }
+
 .un::placeholder,
 .pass::placeholder {
   color: grey;
@@ -72,6 +73,7 @@ form.form1 {
 }
 .submit:hover {
   background-color: indigo;
+  outline: none;
 }
 
 a {
