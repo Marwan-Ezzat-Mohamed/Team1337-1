@@ -105,5 +105,6 @@ function signUpCheck() {
     return;
   }
   members.push({ username: user.username, password: user.password });
+  window.location = 'index.html';
   return;
 }
