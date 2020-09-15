@@ -3,19 +3,20 @@ let members = [
     username: 'user',
     password: '123',
   },
+];
+let admins = [
   {
     username: 'admin',
     password: '123',
   },
 ];
-
+let currentUser;
 function loginCheck() {
   let user = {
     username: document.getElementById('username').value,
     password: document.getElementById('password').value,
   };
   console.log(user.username, user.password);
-  let found = 0;
   if (
     (user.username == null && user.password == null) ||
     (user.username == '' && user.password == '')
@@ -31,18 +32,38 @@ function loginCheck() {
     alert('Password is required');
     return;
   }
+  let member = false,
+    admin = false,
+    memberIndex,
+    adminIndex;
   for (let i = 0; i < members.length; i++) {
     if (
       user.username == members[i].username &&
       user.password == members[i].password
     ) {
-      found = 1;
+      member = true;
+      memberIndex = i;
+      break;
+    }
+    if (
+      user.username == admins[i].username &&
+      user.password == admins[i].password
+    ) {
+      admin = true;
+      adminIndex = i;
+      break;
     }
   }
-  if (!found) {
+  if (!member && !admin) {
     alert('Username or password is incorrect');
     return;
-  } else window.location = 'index.html';
+  } else if (admin && !member) {
+    currentUser = admins[adminIndex].username;
+    window.location = 'admin.html';
+  } else {
+    currentUser = members[memberIndex].username;
+    window.location = 'index.html';
+  }
 }
 
 function signUpCheck() {
