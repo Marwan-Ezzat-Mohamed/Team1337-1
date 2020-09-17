@@ -11,6 +11,7 @@ let admins = [
   },
 ];
 let currentUser;
+
 function loginCheck() {
   let user = {
     username: document.getElementById('username').value,
@@ -45,15 +46,8 @@ function loginCheck() {
       memberIndex = i;
       break;
     }
-    if (
-      user.username == admins[i].username &&
-      user.password == admins[i].password
-    ) {
-      admin = true;
-      adminIndex = i;
-      break;
-    }
   }
+
   if (!member && !admin) {
     alert('Username or password is incorrect');
     return;
@@ -62,6 +56,7 @@ function loginCheck() {
     window.location = 'admin.html';
   } else {
     currentUser = members[memberIndex].username;
+    localStorage.setItem('cUser', currentUser);
     window.location = 'index.html';
   }
 }
@@ -104,7 +99,22 @@ function signUpCheck() {
     alert('Password is required');
     return;
   }
+
+  currentUser = user.username;
+  localStorage.setItem('cUser', currentUser);
   members.push({ username: user.username, password: user.password });
+
+  let members_streialized = JSON.stringify(members);
+  localStorage.setItem('members', members_streialized);
+
   window.location = 'index.html';
   return;
+}
+function updateMembers() {
+  members = JSON.parse(localStorage.getItem('members'));
+}
+function getUser() {
+  document.getElementById('currUserName').innerHTML = localStorage.getItem(
+    'cUser'
+  );
 }

@@ -7,16 +7,17 @@
     <link rel="stylesheet" type="text/css" href="homeStyle.css" />
 </head>
 
-<body>
-
+<body onload="getUser()">
+    
     <div id="header">
-        <a onclick="openNav()">&#9776</a>
+        <a onclick="toggleNav()">&#9776</a>
         <a href="#home">Home</a>
+        <a id="currUserName">Guest</a>
+        
         
     </div>
-
+    
     <div id="mySidenav" class="sideNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
         <a href="#">Favorites</a>
         <a href="#">Cart</a>
@@ -24,7 +25,7 @@
         <a href="#">About</a>
     </div>
     <div id="container">
-
+        
         <div id="content">
             <p>test</p>
         </div>
@@ -34,9 +35,10 @@
         <div id="content2">
             <p></p>
         </div>
-
+        
     </div>
 </body>
 <script src="sideNavanim.js"></script>
+<script src="login&signup.js" defer></script>
 
 </html>
