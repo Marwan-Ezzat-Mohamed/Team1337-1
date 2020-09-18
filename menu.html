@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" ></script> 
+    <script src="cart.js" ></script> 
+</head>
+
+
+
+<body>
+
+
+
+ <div class="content">
+      <table width="100%" border="1"  hieght="100%">
+    <tr>
+        <td colspan ="2" text-align ="center">  <h1>THE MENU</h1> </td>
+    </tr>   
+    <tr> 
+        <td><a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');"> Pizza</a></td> 
+        <td><a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');"> Pasta</a></td> 
+    </tr> 
+</table>
+    </div>
+   
+    
+<div id="Pizza" class="menu">
+      <h1><b>Margherita</b> <span class="Price">45.00 L.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Margherita",45)' >
+      <hr>
+      
+       <h1><b>Formaggio</b> <span class="Price">65.00 L.E</span></h1>
+      <p class="Ingredients">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+        <input type="button" value="Add to cart" onclick='addtocart("Formaggio",65)' >
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="Price">50.00 l.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Chicken",50)' >
+      <hr>
+
+      <h1><b>Pineapple</b> <span class="Price">35.50 L.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Pineapple",35)' >
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="Price">60.00 L.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Meat Town" ,60)' >
+      <hr>
+
+      <h1><b>Parma</b> <span class="Price">75.00 L.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Parma",75)' >
+      <hr>
+      
+      <h1><b>Pepperoni </b> <span class="Price">38.00 L.E</span></h1>
+       <p class="Ingredients">A meaty feast of Pepperoni, mushroom , black olives, mozzarella cheese and tomato sauce</p>
+       <input type="button" value="Add to cart" onclick='addtocart("Pepperoni",38)' >
+      <hr>
+      </div>
+
+<div id="Pasta" class="menu">
+      <h1><b>Lasagna</b><span class="Price">25.00 L.E </span></h1>
+      <p class="Ingredients">Special sauce, mozzarella, parmesan, ground beef</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Lasagna",25)' >
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="Price">40.00 L.E</span></h1>
+      <p class="Ingredients">Ravioli filled with cheese</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Ravioli",40)' >
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="Price">30.00 L.E</span></h1>
+      <p class="Ingredients">Fresh tomatoes, onions, ground beef</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Spaghetti classica",30)' >
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="Price">125.00 L.E </span></h1>
+      <p class="Ingredients">Salmon, shrimp, lobster, garlic</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Seafood pasta",125)' >
+      <hr>
+      
+       <h1><b>Chicken alfredo pasta</b> <span class="Price">55.00 L.E</span></h1>
+      <p class="Ingredients">Skinless, chicken breasts, heavy cream, parmesan cheese, garlic</p>
+      <input type="button" value="Add to cart" onclick='addtocart("Chichen alfredo pasta",55)' >
+      <hr>
+    
+
+    
+  
+</body>
+
+</html>
