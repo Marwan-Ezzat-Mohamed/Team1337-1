@@ -6,6 +6,8 @@ let cart;
 
 function OpenTheCart() {
   quantity = JSON.parse(localStorage.getItem('quantityArray'));
+  Totalprice = JSON.parse(localStorage.getItem('totalprice'));
+  countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
 
   let key = '';
   let list = '<tr><th>Order</th><th>Price</th><th>Quantity</th></tr>\n';
@@ -35,7 +37,10 @@ function OpenTheCart() {
   document.getElementById('list').innerHTML = list;
 }
 function addtocart(TypeOfFood, price) {
+  quantity = JSON.parse(localStorage.getItem('quantityArray'));
   Totalprice = JSON.parse(localStorage.getItem('totalprice'));
+  countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
+
   if (localStorage.getItem(TypeOfFood) == null) {
     localStorage.setItem(TypeOfFood, price);
     Totalprice += price;
@@ -48,8 +53,10 @@ function addtocart(TypeOfFood, price) {
   }
   let quantity_sterialized = JSON.stringify(quantity);
   let totalPrice_sterialized = JSON.stringify(Totalprice);
+  let countOfitem_sterialized = JSON.stringify(countOfitem);
   localStorage.setItem('quantityArray', quantity_sterialized);
   localStorage.setItem('totalprice', totalPrice_sterialized);
+  localStorage.setItem('countOfitem', countOfitem_sterialized);
 }
 function ClearAll() {
   Totalprice = 0;
