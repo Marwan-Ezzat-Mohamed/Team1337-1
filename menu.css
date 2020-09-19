@@ -33,6 +33,7 @@ button:hover {
 .Price {
   float: right;
   margin-right: 5px;
+  color: gray;
 }
 .Ingredients {
   color: grey;
@@ -46,9 +47,20 @@ button:hover {
   margin-left: 5px;
 }
 td {
+  color: hotpink;
   text-align: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
 }
-.menu {
+#link{
+color:hotpink;
+}
+.sizecontent{
+  font-size: x-large;
+}
+/*.menu {
   display: inline-block;
   border-radius: 3em;
   background-color: rgb(255, 255, 255);
@@ -56,4 +68,100 @@ td {
   align-content: center;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+}*/
+.food1 {
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+}
+.food2{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food3{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food4{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food5{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food6{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food7{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food8{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food9{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food10{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food11{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+}
+.food12{
+  justify-content: center;
+  align-content: center;
+  border-radius: 1em;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
 }
