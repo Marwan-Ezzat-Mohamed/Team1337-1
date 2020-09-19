@@ -9,6 +9,9 @@ body {
 .Ingredients {
   color: grey;
 }
+.Typeoffood{
+  color: hotpink;
+}
 td {
   text-align: center;
 }
