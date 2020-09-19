@@ -85,3 +85,10 @@ td {
     1.2
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.checkoutbtn,
+.homebtn,
+.loginbtn {
+  float: left;
+  margin-right: 30px;
+}

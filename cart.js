@@ -72,3 +72,13 @@ function TotalPrice() {
   Totalprice = JSON.parse(localStorage.getItem('totalprice'));
   document.getElementById('list').innerHTML = Totalprice;
 }
+
+function goToHome() {
+  window.location = 'index.html';
+}
+function goToLogin() {
+  window.location = 'login.html';
+}
+function goToPayment() {
+  window.location = 'paymentBycredit.html';
+}
