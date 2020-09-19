@@ -4,21 +4,56 @@ body {
   /* background-image: url('https://image.freepik.com/free-vector/waiter-keeps-restaurant-menu-waiter-with-blue-apron-style-character-illustration-white-background-website-page-mobile-app_257455-930.jpg'); */
   background-position: center;
   background-attachment: fixed;
-  width: 30%;
+  width: 35%;
   margin-left: 33%;
   background-color: #fef69a;
   font-family: 'Ubuntu', sans-serif;
 }
+
+button {
+  border-radius: 5em;
+  color: #fff;
+  background: #db166c;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 35%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  outline: none;
+}
+
+button:hover {
+  background-color: indigo;
+  outline: none;
+}
 .Price {
   float: right;
+  margin-right: 5px;
 }
 .Ingredients {
   color: grey;
+  margin-left: 5px;
 }
 .Typeoffood {
   color: hotpink;
   font-family: 'Sofia';
+  margin-bottom: 9px;
+  justify-content: center;
+  margin-left: 5px;
 }
 td {
   text-align: center;
+}
+.menu {
+  display: inline-block;
+  border-radius: 3em;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
 }
