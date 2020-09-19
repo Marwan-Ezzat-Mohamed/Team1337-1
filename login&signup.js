@@ -10,7 +10,8 @@ let admins = [
     password: '123',
   },
 ];
-let currentUser;
+let currentUser = 'Guest';
+localStorage.setItem('cUser', currentUser);
 
 function loginCheck() {
   let user = {

@@ -1,43 +1,47 @@
 <html>
-
-<head>
-    <title>
-        Home
-    </title>
-    <link rel="stylesheet" type="text/css" href="homeStyle.css" />
-</head>
-
-<body onload="getUser()">
-    
-    <div id="header">
-        <a onclick="toggleNav()">&#9776</a>
-        <a href="index.html">Home</a>
-        <a id="currUserName">Guest</a>
-        
-        
-    </div>
-    
-    <div id="mySidenav" class="sideNav">
-        <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
-        <a href="menu.html">Menu</a>
-        <a href="#">About</a>
-    </div>
-    <div id="container">
-        
-        <div id="content">
-            <p>Formaggio Pizza</p>
-        </div>
-        <div id="content1">
-            <p>Seaood Pasta</p>
-        </div>
-        <div id="content2">
-            <p>Parma Pizza</p>
-        </div>
-        
-    </div>
-</body>
-<script src="sideNavanim.js"></script>
-<script src="login&signup.js" defer></script>
-
+   <head>
+      <title>
+         Home
+      </title>
+      <link rel="stylesheet" type="text/css" href="homeStyle.css" />
+   </head>
+   <body onload="getUser()">
+      <div id="header">
+         <a onclick="toggleNav()">&#9776</a>
+         <a href="index.html">Home</a>
+         <a id="currUserName">Guest</a>
+      </div>
+      <div id="mySidenav" class="sideNav">
+         <a href="index.html">Home</a>
+         <a href="cart.html">Cart</a>
+         <a href="menu.html">Menu</a>
+         <a href="#">About</a>
+      </div>
+      <div id="container">
+         <div id="content">
+            <div class="slideshow-container">
+               <div class="mySlides">
+                  <img src="11.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <img src="22.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <img src="33.jpg" style="width:100%">
+               </div>
+               <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+               <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+         </div>
+         <div id="content1">
+            
+         </div>
+         <div id="content2">
+            
+         </div>
+      </div>
+   </body>
+   <script src="sideNavanim.js" defer></script>
+   <script src="login&signup.js" defer></script>
+   <script src="slider.js" defer></script>
 </html>
