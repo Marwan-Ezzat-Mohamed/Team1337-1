@@ -10,7 +10,7 @@ function OpenTheCart() {
   countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
 
   let key = '';
-  let list = '<tr><th>Order</th><th>Price</th><th>Quantity</th></tr>\n';
+  let list = '<tr class="output"><th>Order</th><th>Price</th><th>Quantity</th></tr>\n';
   let i = 0;
   for (i = 0; i < localStorage.length; i++) {
     key = localStorage.key(i);
@@ -32,8 +32,8 @@ function OpenTheCart() {
       quantity[localStorage.getItem(key)] +
       '</td></tr>\n';
   }
-  if (list == '<tr><th>Order</th><th>Price</th></tr>\n') {
-    list += '<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n';
+  if (list == '<tr class="output"><th>Order</th><th>Price</th></tr>\n') {
+    list += '<tr class="output"><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n';
   }
   document.getElementById('list').innerHTML = list;
 }

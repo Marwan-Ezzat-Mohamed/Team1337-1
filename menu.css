@@ -76,8 +76,8 @@ td {
   border-radius: 1em;
 
   transition: transform 0.2s; /* Animation */
-  width: 100%;
-  height: 130px;
+  width: 120%;
+  height: 150px;
 }
 
 .food1:hover {

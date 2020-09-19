@@ -1,7 +1,43 @@
 body {
     background-repeat: no-repeat;
     font-family: 'Amatic SC', sans-serif;
-    background-image: url('cart.png');
+    background-color: #fef69a; 
     background-position: center;
     background-attachment: fixed;
+  }
+  #cart{
+    margin-top: 30px;
+  margin-bottom: 20px;
+  color: #db166c;;
+  border-radius: 1em;
+  width: 100%;
+  height: 100px;
+  }
+  #shop{
+        color:#db166c;
+  }
+  #link
+  {
+    color: #db166c;
+  }
+  #delete
+  {
+    color: #db166c;
+  }
+  .output{
+    color: #db166c;
+  }
+  .buttons {
+    border-radius: 5em;
+    color: #fff;
+    background: #db166c;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    outline: none;
   }
