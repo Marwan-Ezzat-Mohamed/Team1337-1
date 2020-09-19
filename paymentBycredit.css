@@ -1,9 +1,9 @@
 body {
     font-family: "Amatic SC", sans-serif;
+    background-repeat: no-repeat;
+    font-family: 'Amatic SC', sans-serif;
+    background-image: url('creditcard.jpg');
+    background-attachment: fixed;
+    background-position: center;
   }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  

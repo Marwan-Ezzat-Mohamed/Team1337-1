@@ -2,6 +2,8 @@ body {
   background-repeat: no-repeat;
   font-family: 'Amatic SC', sans-serif;
   background-image: url('https://image.freepik.com/free-vector/waiter-keeps-restaurant-menu-waiter-with-blue-apron-style-character-illustration-white-background-website-page-mobile-app_257455-930.jpg');
+  background-position: center;
+  background-attachment: fixed;
 }
 .Price {
   float: right;
@@ -11,6 +13,7 @@ body {
 }
 .Typeoffood{
   color: hotpink;
+  font-family: "Sofia";
 }
 td {
   text-align: center;
