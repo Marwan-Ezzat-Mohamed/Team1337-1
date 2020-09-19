@@ -1,0 +1,7 @@
+body {
+    background-repeat: no-repeat;
+    font-family: 'Amatic SC', sans-serif;
+    background-image: url('cart.png');
+    background-position: center;
+    background-attachment: fixed;
+  }
