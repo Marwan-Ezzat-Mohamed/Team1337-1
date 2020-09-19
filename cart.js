@@ -18,7 +18,8 @@ function OpenTheCart() {
       key == 'quantityArray' ||
       key == 'cUser' ||
       key == 'members' ||
-      key == 'totalprice'
+      key == 'totalprice' ||
+      key == 'countOfitem'
     )
       continue;
     console.log(localStorage.getItem(key), quantity[localStorage.getItem(key)]);
@@ -37,9 +38,12 @@ function OpenTheCart() {
   document.getElementById('list').innerHTML = list;
 }
 function addtocart(TypeOfFood, price) {
-  quantity = JSON.parse(localStorage.getItem('quantityArray'));
-  Totalprice = JSON.parse(localStorage.getItem('totalprice'));
-  countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
+  if (localStorage.getItem('quantityArray') != null)
+    quantity = JSON.parse(localStorage.getItem('quantityArray'));
+  if (localStorage.getItem('totalprice') != null)
+    Totalprice = JSON.parse(localStorage.getItem('totalprice'));
+  if (localStorage.getItem('countOfitem') != null)
+    countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
 
   if (localStorage.getItem(TypeOfFood) == null) {
     localStorage.setItem(TypeOfFood, price);
@@ -57,6 +61,7 @@ function addtocart(TypeOfFood, price) {
   localStorage.setItem('quantityArray', quantity_sterialized);
   localStorage.setItem('totalprice', totalPrice_sterialized);
   localStorage.setItem('countOfitem', countOfitem_sterialized);
+  alert('Item has been addded to your cart');
 }
 function ClearAll() {
   Totalprice = 0;
