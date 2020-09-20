@@ -18,3 +18,5 @@ function showSlides(n) {
   }
   slides[index].style.display = 'block';
 }
+if(is_changed===true)
+document.body.style.background = 'grey';
