@@ -1,7 +1,3 @@
-HEAD
-
-
- 6ade333a3dd3cccedbf12b95297bc5b8bf7b819b
 let members = [
   {
     username: 'user',
