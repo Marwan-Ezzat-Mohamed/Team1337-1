@@ -10,6 +10,8 @@
          <a onclick="toggleNav()">&#9776</a>
          <a href="index.html">Home</a>
          <a id="currUserName">Guest</a>
+         <a href="login.html">Log in</a>
+         <a href="signup.html">Sign up</a>
       </div>
       <div id="mySidenav" class="sideNav">
          <a href="index.html">Home</a>
@@ -21,17 +23,18 @@
          <div id="content">
             <div class="slideshow-container">
                <div class="mySlides">
-                  <img src="11.jpg" style="width:100%">
+                  <img src="pizza1.jpg" style="width:100%">
                </div>
                <div class="mySlides">
-                  <img src="22.jpg" style="width:100%">
+                  <img src="pizza2.jpg" style="width:100%">
                </div>
-               <div class="mySlides">
-                  <img src="33.jpg" style="width:100%">
-               </div>
+               
                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
+            <p class='name'>Margherita</p>
+            <p class='ing'>ingrediants:Fresh tomatoes, fresh mozzarella, fresh basil</p>
+            <button class='addtocartbtn' onclick='addtocart("Margherita",45)'>Add to cart</button>
          </div>
          <div id="content1">
             
@@ -44,4 +47,6 @@
    <script src="sideNavanim.js" defer></script>
    <script src="login&signup.js" defer></script>
    <script src="slider.js" defer></script>
+   <script src="menu.js"></script>
+  <script src="cart.js"></script>
 </html>
