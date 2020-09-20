@@ -104,7 +104,7 @@ function signUpCheck() {
     return;
   }
 
-  if (user.username.length < 6) {
+  if (user.username.length < 3) {
     alert('Username must be more than 3 characters');
     return;
   }
