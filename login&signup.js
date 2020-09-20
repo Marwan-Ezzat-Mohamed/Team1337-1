@@ -1,4 +1,3 @@
-if (is_changed === true) document.body.style.background = 'grey';
 let members = [
   {
     username: 'user',
