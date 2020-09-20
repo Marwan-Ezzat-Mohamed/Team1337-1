@@ -1,5 +1,4 @@
-if(is_changed===true)
-document.body.style.background = 'grey';
+if (is_changed === true) document.body.style.background = 'grey';
 let members = [
   {
     username: 'user',
@@ -13,14 +12,16 @@ let admins = [
   },
 ];
 let currentUser = 'Guest';
+let members_streialized = JSON.stringify(members);
+localStorage.setItem('members', members_streialized);
 localStorage.setItem('cUser', currentUser);
 
 function loginCheck() {
+  members = JSON.parse(localStorage.getItem('members'));
   let user = {
     username: document.getElementById('username').value,
     password: document.getElementById('password').value,
   };
-  console.log(user.username, user.password);
   if (
     (user.username == null && user.password == null) ||
     (user.username == '' && user.password == '')
@@ -36,8 +37,8 @@ function loginCheck() {
     alert('Password is required');
     return;
   }
-  let member = false,
-    admin = false,
+  let isMember = false,
+    isAdmin = false,
     memberIndex,
     adminIndex;
   for (let i = 0; i < members.length; i++) {
@@ -45,18 +46,30 @@ function loginCheck() {
       user.username == members[i].username &&
       user.password == members[i].password
     ) {
-      member = true;
+      isMember = true;
       memberIndex = i;
       break;
     }
   }
-
-  if (!member && !admin) {
+  if (!isMember) {
+    for (let i = 0; i < admins.length; i++) {
+      if (
+        user.username == admins[i].username &&
+        user.password == admins[i].password
+      ) {
+        admin = true;
+        adminIndex = i;
+        break;
+      }
+    }
+  }
+  if (!isMember && !admin) {
     alert('Username or password is incorrect');
     return;
-  } else if (admin && !member) {
+  } else if (admin && !isMember) {
     currentUser = admins[adminIndex].username;
-    window.location = 'admin.html';
+    localStorage.setItem('cUser', 'admin');
+    window.location = 'adminpage.html';
   } else {
     currentUser = members[memberIndex].username;
     localStorage.setItem('cUser', currentUser);
@@ -107,7 +120,7 @@ function signUpCheck() {
   localStorage.setItem('cUser', currentUser);
   members.push({ username: user.username, password: user.password });
 
-  let members_streialized = JSON.stringify(members);
+  members_streialized = JSON.stringify(members);
   localStorage.setItem('members', members_streialized);
 
   window.location = 'index.html';
