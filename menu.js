@@ -7,3 +7,5 @@ function openMenu(eventt, menuName) {
   }
   document.getElementById(menuName).style.display = 'block';
 }
+if(is_changed===true)
+document.body.style.background = 'grey';

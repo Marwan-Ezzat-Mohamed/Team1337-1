@@ -1,3 +1,5 @@
+if(is_changed===true)
+document.body.style.background = 'grey';
 let Totalprice = 0;
 let quantity = [];
 let countOfitem = [];
