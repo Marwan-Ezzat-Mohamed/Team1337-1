@@ -12,7 +12,6 @@ let admins = [
 ];
 let currentUser = 'Guest';
 let members_streialized = JSON.stringify(members);
-localStorage.setItem('members', members_streialized);
 
 function loginCheck() {
   members = JSON.parse(localStorage.getItem('members'));
