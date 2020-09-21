@@ -251,7 +251,12 @@
   #details{
     color:grey;
   }
-  
+  #up{
+    color:green;
+  }
+  #down{
+    color: red;
+  }
   @media screen and (min-width: 768px) {
     .collapsed .page-header {
       width: 40px;
