@@ -1,4 +1,3 @@
-
 let Totalprice = 0;
 let quantity = [];
 let countOfitem = [];
@@ -11,7 +10,8 @@ function OpenTheCart() {
   countOfitem = JSON.parse(localStorage.getItem('countOfitem'));
 
   let key = '';
-  let list = '<tr class="output"><th>Order</th><th>Price</th><th>Quantity</th></tr>\n';
+  let list =
+    '<tr class="output"><th>Order</th><th>Price</th><th>Quantity</th></tr>\n';
   let i = 0;
   for (i = 0; i < localStorage.length; i++) {
     key = localStorage.key(i);
@@ -20,7 +20,9 @@ function OpenTheCart() {
       key == 'cUser' ||
       key == 'members' ||
       key == 'totalprice' ||
-      key == 'countOfitem'
+      key == 'countOfitem' ||
+      key == 'background-color' ||
+      key == 'bgColor'
     )
       continue;
     console.log(localStorage.getItem(key), quantity[localStorage.getItem(key)]);
@@ -34,7 +36,8 @@ function OpenTheCart() {
       '</td></tr>\n';
   }
   if (list == '<tr class="output"><th>Order</th><th>Price</th></tr>\n') {
-    list += '<tr class="output"><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n';
+    list +=
+      '<tr class="output"><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n';
   }
   document.getElementById('list').innerHTML = list;
 }
