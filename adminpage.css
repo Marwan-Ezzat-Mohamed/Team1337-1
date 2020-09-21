@@ -229,6 +229,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+    background:var(--page-content-bgColor);
   }
   
   .page-content .grid > article {
@@ -237,14 +238,19 @@
     background: var(--page-content-blockColor);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-  }
+}
   
-  .page-content .grid > article:first-child,
-  .page-content .grid > article:last-child {
+  .page-content .grid > article:first-child{
     grid-column: 1 / -1;
   }
   
-  
+  #title{
+    background-color:black ;
+    color: #fff;
+  }
+  #details{
+    color:grey;
+  }
   
   @media screen and (min-width: 768px) {
     .collapsed .page-header {
