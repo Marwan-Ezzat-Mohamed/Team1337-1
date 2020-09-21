@@ -1,11 +1,19 @@
+
 body {
   margin: 0px;
   font-family: Roboto, Helvetica, sans-serif;
+ 
+  background-size: 1600px 500px;
 }
+body{
+  background-color:#fefac2 ;
+  background-position: bottom;
+}
+
 #header {
   overflow: hidden;
   background-color: #fef69a;
-  box-shadow: 0px 0px 15px #b3b3b3;
+  margin-left: 85px;
 }
 #header a {
   float: left;
@@ -24,12 +32,21 @@ body {
 .sideNav {
   border-radius: 0px 0px 20px 0px;
   float: left;
-  height: 60%;
+  height: 100%;
   width: 0;
   background-color: #fef69a;
-  overflow-x: hidden;
-  transition: 0.5s;
-  box-shadow: 13px 13px 15px #e6e6e6;
+  overflow-x: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 1300;
+  bottom: 0;
+  overflow: auto;
+  padding-top: 15px;
+  width: var(--sideNave-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .sideNav a {
@@ -92,19 +109,17 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 30%;
-  height: 90%;
-
-  position: relative;
-  margin-left: 10px;
-  float: left;
+  width: 80%;
+  height: 88%;
+  border-radius: 15px;
 }
 
 img {
-  margin-top: 10px;
-  border-radius: 1000000px;
-  width: 100%;
-  height: 100%;
+  margin-top: 52px;
+  width: 80%;
+  height: 88%;
+  margin-left: 270;
+  border-radius: 15px;
 }
 .mySlides {
   display: none;
@@ -115,7 +130,7 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 25px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -123,6 +138,8 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: black;
+  opacity: 0.5;
 }
 .prev {
   float: left;
@@ -130,8 +147,7 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  margin-right: 20px;
+  margin-top: 25px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -139,13 +155,15 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: black;
+  opacity: 0.5;
 }
 .next {
-  right: 0;
+  right:34;
   border-radius: 3px 0 0 3px;
 }
 .prev {
-  left: 0;
+  left: 270;
   border-radius: 3px 0 0 3px;
 }
 
@@ -185,4 +203,48 @@ img {
   font-size: large;
   float: left;
   word-wrap: break-word;
+}
+.name{
+  text-align: center;
+  font-size: 50%;
+  color: #fff;
+
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  left:150;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.foot {
+  font-size: 0.85rem;
+  text-align: right;
+ margin-right: 10;
+}
+
+.foot span {
+  color: var(--red);
 }
