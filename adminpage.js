@@ -20,6 +20,9 @@ function darkMode() {
     localStorage.setItem('background-color', 2);
   }
 }
+function submit(){
+  document.getElementById("form").reset();
+}
 function logOut() {
   window.location = 'login.html';
 }

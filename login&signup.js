@@ -10,6 +10,7 @@ let admins = [
     password: '123',
   },
 ];
+
 let currentUser = 'Guest';
 let members_streialized = JSON.stringify(members);
 

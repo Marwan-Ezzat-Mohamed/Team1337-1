@@ -234,7 +234,8 @@
   
   .page-content .grid > article {
     display: flex;
-    height: 300px;
+    height: 320px;
+    width: 619px;
     background: var(--page-content-blockColor);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -244,6 +245,7 @@
   #title{
     background-color:black ;
     color: #fff;
+    text-align: center;
   }
   #details{
     color:grey;
