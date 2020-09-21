@@ -240,10 +240,7 @@
     box-shadow: var(--box-shadow);
 }
   
-  .page-content .grid > article:first-child{
-    grid-column: 1 / -1;
-  }
-  
+ 
   #title{
     background-color:black ;
     color: #fff;
