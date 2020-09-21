@@ -1,13 +1,15 @@
 body {
   background-repeat: no-repeat;
   font-family: 'Amatic SC', sans-serif;
-  /* background-image: url('https://image.freepik.com/free-vector/waiter-keeps-restaurant-menu-waiter-with-blue-apron-style-character-illustration-white-background-website-page-mobile-app_257455-930.jpg'); */
-  background-position: center;
-  background-attachment: fixed;
-  width: 35%;
-  margin-left: 33%;
-  background-color: #fef69a;
+/* background-image: url("https://previews.123rf.com/images/moleskostudio/moleskostudio1301/moleskostudio130100029/17693857-vintage-background-with-hand-drawn-elements-for-design-menu.jpg") ;*/
+ background-size: contain;
+ background-color: #fef69a;
+max-width: 100%;
+max-zoom: -0.5;
+background-repeat: repeat-y;
+  width: 50%;
   font-family: 'Ubuntu', sans-serif;
+  margin-left: 20%;
 }
 
 button {
@@ -20,45 +22,33 @@ button {
   padding-bottom: 10px;
   padding-top: 10px;
   font-family: 'Ubuntu', sans-serif;
-  margin-left: 35%;
   font-size: 13px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   outline: none;
+  float: right;
+  margin-right: 10px;
 }
 
 button:hover {
   background-color: indigo;
   outline: none;
 }
-.Price {
-  float: right;
-  margin-right: 5px;
-  color: gray;
-}
-.Ingredients {
-  color: grey;
-  margin-left: 5px;
-}
-.Typeoffood {
-  color: hotpink;
-  font-family: 'Sofia';
-  margin-bottom: 9px;
-  justify-content: center;
-  margin-left: 5px;
-}
-td {
-  color: hotpink;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1em;
-}
+
 #link {
+  color: black;
+  border-radius: 25px;
+  text-decoration: underline;
+}
+#link:active{
+  color: hotpink;
+  text-decoration: none;
+}
+#link:hover{
   color: hotpink;
 }
 .sizecontent {
   font-size: x-large;
+
 }
 /*.menu {
   display: inline-block;
@@ -72,7 +62,7 @@ td {
 .food1 {
   margin-top: 30px;
   margin-bottom: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fefac2;
   border-radius: 1em;
 
   transition: transform 0.2s; /* Animation */
@@ -86,9 +76,38 @@ td {
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.checkoutbtn,
-.homebtn,
-.loginbtn {
-  float: left;
+.Ingredients {
+  color: grey;
+  margin-top: 20px;
+  margin-left: 10px;
+
+}
+.Price {
+  float: right;
+  color: gray;
+  margin-top: 40px;
   margin-right: 30px;
+}
+
+td {
+  color:black;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1em;
+}
+.Typeoffood {
+  color: black;
+  font-family: 'Sofia';
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.homebtn{
+  margin-left: 20px;
+}
+.checkoutbtn
+ {
+  margin-right: 92px;
+}
+.loginbtn{
+  margin-left: 25px;
 }
