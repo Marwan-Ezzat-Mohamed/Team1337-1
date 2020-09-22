@@ -240,8 +240,21 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
-  
- 
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#output_image
+{
+ max-width:300px;
+ max-height: 250px;
+margin-left: 150;
+margin-top: 60;
+}
+
   #title{
     background-color:black ;
     color: #fff;

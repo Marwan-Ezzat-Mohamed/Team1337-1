@@ -20,9 +20,17 @@ function darkMode() {
     localStorage.setItem('background-color', 2);
   }
 }
-function submit(){
-  document.getElementById("form").reset();
-}
 function logOut() {
   window.location = 'login.html';
+}
+function preview_image(event) 
+{
+ var reader = new FileReader();
+ reader.onload = function()
+ {
+  var output = document.getElementById('output_image');
+  output.src = reader.result;
+ }
+ reader.readAsDataURL(event.target.files[0]);
+ alert("Image has been uploaded");
 }
