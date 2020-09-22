@@ -86,3 +86,6 @@ function goToLogin() {
 function goToPayment() {
   window.location = 'paymentBycredit.html';
 }
+function goToCart() {
+  window.location = 'cart.html';
+}
