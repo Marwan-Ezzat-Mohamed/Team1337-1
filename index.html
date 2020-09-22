@@ -1,106 +1,44 @@
 <html>
-   <head>
-      <title>
-         Home
-      </title>
-      <link rel="stylesheet" type="text/css" href="homeStyle.css" />
+
+<head>
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" type="text/css" href="indexStyle.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        
+        <a onclick="toggleNav()">&#9776</a>
+        <a href="home.html" target="mainFrame">Home</a>
       
-   </head>
-   <body onload="updateMembers(),getUser()">
-      <div class="header" id="header">
-         <a onclick="toggleNav()">&#9776</a>
-         <a id="currUserName">User</a>
-         <a href="login.html">Log in</a>
-         <a href="signup.html">Sign up</a>
-         <a onclick="logOut(),getUser()">log out</a>
-      </div>
-      <div id="mySidenav" class="sideNav">
-         <a href="index.html">Home</a>
-         <a href="cart.html">Cart</a>
-         <a href="menu.html">Menu</a>
-         <a href="#">About</a>
-      </div>
-      <div class="slideshow-container">
-
-         <div class="mySlides fade">
-           <img src="image6.jpg" style="width:100%">
-         </div>
-         
-         <div class="mySlides fade">
-           <img src="image1.jpg" style="width:100%">
-         </div>
-         
-         <div class="mySlides fade">
-           <img src="image2.webp" style="width:100%">
-         </div>
-         <div class="mySlides fade">
-           <img src="image3.jpg" style="width:100%">
-         </div>
-         <div class="mySlides fade">
-           <img src="image4.jpg" style="width:100%">
-         </div>
-         <div class="mySlides fade">
-            <img src="image5.jpg" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="image7.jpg" style="width:100%">
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a id="currUserName">Guest</a>
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign up</a>
+            <a onclick="logOut(),getUser()">log out</a>
+   
         
-         </div>
-        
-         
-         <div style="text-align: center;">
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-           <span class="dot"></span> 
-         </div>
-          <script>
-         var slideIndex = 1;
-var timer = null;
-showSlides(slideIndex);
+    </div>
 
-function plusSlides(n) {
-  clearTimeout(timer);
-  showSlides(slideIndex += n);
-}
+    <div id="main">
 
-function currentSlide(n) {
-  clearTimeout(timer);
-  showSlides(slideIndex = n);
-}
+        <div id="mySidenav" class="sideNav">
+            
+            <a href="home.html" target="mainFrame">Home</a>
+            <a href="cart.html" target="mainFrame">Cart</a>
+            <a href="menu.html" target="mainFrame">Menu</a>
+            <a href="about.html" target="mainFrame">About</a>
+        </div>
+        <div id="container">
 
-function showSlides(n) {
-   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  var i;
-  if (n==undefined){n = ++slideIndex}
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  timer = setTimeout(showSlides, 3000);
-} 
-            </script>
-   </body>
-    <footer class="foot">
-      <small>Made with <span>❤</span> by <a >Team 1337</a>
-      </small>
-      </footer>
-   <script src="sideNavanim.js" defer></script>
-   <script src="login&signup.js" defer></script>
-   <script src="menu.js"></script>
-  <script src="cart.js"></script>
+            <iframe src="home.html" style="border: none;" width=100% height=100% name="mainFrame"></iframe>
+
+
+        </div>
+    </div>
+</body>
+<script src="sideNavanim.js"></script>
 
 </html>

@@ -10,17 +10,10 @@
 
 <body>
   <div class="checkoutbtn">
-    <button type="button" onclick="goToCart()">
-      Cart
+    <button type="button" onclick="goToPayment()">
+      Checkout
     </button>
   </div>
-
-  <div class="homebtn">
-    <button type="button" onclick="goToHome()">
-      Home
-    </button>
-  </div>
-
   <div class="loginbtn">
     <button type="button"onclick="goToLogin()">
       Login
@@ -30,13 +23,13 @@
     <table width="120%" hieght="100%">
       <tr>
         <td colspan="2" text-align="center">
-          <h1>THE MENU</h1>
+          <h1>MENU</h1>
         </td>
       </tr>
       <tr>
-        <td class="sizecontent"><a id="link" href="javascript:void(0)" onclick="openMenu(event, 'Pizza');"> Pizza</a>
+        <td class="sizecontent"><a id="link" href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" style="text-decoration: none;"> Pizza</a>
         </td>
-        <td class="sizecontent"><a id="link" href="javascript:void(0)" onclick="openMenu(event, 'Pasta');"> Pasta</a>
+        <td class="sizecontent"><a id="link" href="javascript:void(0)" onclick="openMenu(event, 'Pasta');"style="text-decoration: none;"> Pasta</a>
         </td>
       </tr>
     </table>

@@ -1,15 +1,13 @@
 body {
-  background-repeat: no-repeat;
-  font-family: 'Amatic SC', sans-serif;
-/* background-image: url("https://previews.123rf.com/images/moleskostudio/moleskostudio1301/moleskostudio130100029/17693857-vintage-background-with-hand-drawn-elements-for-design-menu.jpg") ;*/
- background-size: contain;
- background-color: #fef69a;
-max-width: 100%;
-max-zoom: -0.5;
-background-repeat: repeat-y;
-  width: 50%;
-  font-family: 'Ubuntu', sans-serif;
-  margin-left: 20%;
+      background-repeat: no-repeat;
+      font-family: 'Amatic SC', sans-serif;
+    
+    max-width: 100%;
+    max-zoom: -0.5;
+    background-repeat: repeat-y;
+      width: 50%;
+      font-family: 'Ubuntu', sans-serif;
+      margin-left: 20%;
 }
 
 button {
@@ -50,30 +48,24 @@ button:hover {
   font-size: x-large;
 
 }
-/*.menu {
-  display: inline-block;
-  border-radius: 3em;
-  background-color: rgb(255, 255, 255);
-  justify-content: center;
-  align-content: center;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-}*/
+
 .food1 {
+  /*font-family: Arial;*/
   margin-top: 30px;
   margin-bottom: 40px;
   background-color: #fefac2;
   border-radius: 1em;
-
+  margin-left: 25%;
   transition: transform 0.2s; /* Animation */
-  width: 120%;
-  height: 150px;
+  width: 75%;
+  height: 125px;
 }
+
 
 .food1:hover {
   transform: scale(
-    1.2
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    1.06
+  );
 }
 
 .Ingredients {
@@ -97,17 +89,12 @@ td {
 }
 .Typeoffood {
   color: black;
-  font-family: 'Sofia';
-  margin-left: 10px;
-  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-top: 30%;
 }
-.homebtn{
-  margin-left: 20px;
-}
+
 .checkoutbtn
  {
-  margin-right: 120px;
-}
-.loginbtn{
-  margin-left: 20px;
+  margin-right: 20%;
 }
