@@ -10,12 +10,10 @@ let admins = [
     password: '123',
   },
 ];
-
 let currentUser = 'Guest';
 let members_streialized = JSON.stringify(members);
 
 function loginCheck() {
-  members = JSON.parse(localStorage.getItem('members'));
   let user = {
     username: document.getElementById('username').value,
     password: document.getElementById('password').value,
@@ -136,7 +134,12 @@ function signUpCheck() {
   return;
 }
 function updateMembers() {
-  members = JSON.parse(localStorage.getItem('members'));
+  members_streialized = JSON.stringify(members);
+  if (localStorage.getItem('members') != null) {
+    members = JSON.parse(localStorage.getItem('members'));
+  } else {
+    localStorage.setItem('members', currentUser);
+  }
 }
 
 function getUser() {
