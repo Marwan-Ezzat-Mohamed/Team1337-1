@@ -2,18 +2,18 @@ body {
     font-family: "Amatic SC", sans-serif;
     background-repeat: no-repeat;
     font-family: 'Amatic SC', sans-serif;
-    background-image: url('creditcard.jpg');
     background-attachment: fixed;
     background-position: center;
   }
-  .paymethodfieldset{
+  .paymethodfieldset {
     margin-top: 30px;
-  margin-bottom: 40px;
-  border-radius: 1em;
-  color:#db166c;
-  border: 0;
-  outline: none;
-  }
+    margin-bottom: 40px;
+    margin-left: 550;
+    border-radius: 1em;
+    color: #db166c;
+    border: 0;
+    outline: none;
+}
   #bton
   {
     border-radius: 5em;
