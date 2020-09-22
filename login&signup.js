@@ -138,7 +138,7 @@ function updateMembers() {
   if (localStorage.getItem('members') != null) {
     members = JSON.parse(localStorage.getItem('members'));
   } else {
-    localStorage.setItem('members', currentUser);
+    localStorage.setItem('members', members_streialized);
   }
 }
 

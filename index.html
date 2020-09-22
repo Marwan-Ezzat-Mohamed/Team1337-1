@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="indexStyle.css" />
 </head>
 
-<body>
+<body onload="updateMembers(),getUser()">
 
-    <div id="header">
+    <div id="header" >
         
         <a onclick="toggleNav()">&#9776</a>
         <a href="home.html" target="mainFrame">Home</a>
@@ -39,6 +39,10 @@
         </div>
     </div>
 </body>
-<script src="sideNavanim.js"></script>
+
+<script src="sideNavanim.js" defer></script>
+   <script src="login&signup.js" defer></script>
+   <script src="menu.js"></script>
+  <script src="cart.js"></script>
 
 </html>
